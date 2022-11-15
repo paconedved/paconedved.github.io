@@ -10,9 +10,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
-	<style>
-
+	<style media="all">
+		.mobile-display{display:none}
+		.desktop-display{display:block}
+		@media (max-width:1000px){
+			.desktop-display {display:none}
+			.mobile-display {display:block}
+		}
 	</style>
+
 </head>
 <body>
 <div class="container-fluid bg-white pt-5">
@@ -116,13 +122,20 @@
 					<div class="inner">
 						<h2>Crimson Spire</h2>
 						<br>
-						<p style="font-size:20px">A 3D action adventure game in it's early stages. The player plays the role of a travelling warrior on a journey to
-						the Crimson Spire.</p>
-						<p style="font-size:20px">The player will find themselves near a small village when the game starts. Interact with the NPCs to get to know about the village
-						and acquire new quests that will help you progress through the game. Experience day and night cycle and encounter different enemy types throughout your journey.</p>
-						<p style="font-size:20px">This is a short demo of the game and is made using new Unity Input system due to which it can be played using mouse and keyboard or a 
-						controller.</p>
-						<a href="https://paconedved.itch.io/silverwood-hospital">Try the game for yourself.</a>
+						<div class="desktop-display">
+							<p style="font-size:20px">A 3D action adventure game in it's early stages. The player plays the role of a travelling warrior on a journey to
+							the Crimson Spire.</p>
+							<p style="font-size:20px">The player will find themselves near a small village when the game starts. Interact with the NPCs to get to know about the village
+							and acquire new quests that will help you progress through the game. Experience day and night cycle and encounter different enemy types throughout your journey.</p>
+							<p style="font-size:20px">This is a short demo of the game and is made using new Unity Input system due to which it can be played using mouse and keyboard or a 
+							controller.</p>
+						</div>
+						<div class="mobile-display">
+							<p style="font-size:20px">A 3D action adventure game in it's early stages. The player plays the role of a travelling
+								warrior on a journey to
+								the Crimson Spire.</p>
+						</div>
+						<a href="https://paconedved.itch.io/placeholder">Try the game for yourself.</a>
 					</div>
 				</div>
 			</div>
@@ -153,12 +166,21 @@
 					<div class="inner">
 						<h2>Silverwood Hospital</h2>
 						<br>
-						<p style="font-size:20px">Silverwood Hospital is a short 3d horror/puzzle game. The player assumes the role of a small time reporter trying to
-						make their way around a dark and abandoned hospital in order to gather evidence to check if the rumors about the shady
-						experiments conducted in the hospital are true.</p>
-						<p style="font-size:20px">The player encounters various puzzles which need to be solved in order to progress through the game and collect evidence
-						tapes. The ending of the game is influenced by the number of tapes collected during the playthrough. There is total of 5 tapes that can be collected 
-						and 3 different endings that can be achieved.</p>
+						<div class="desktop-display">
+							<p style="font-size:20px">Silverwood Hospital is a short 3d horror/puzzle game. The player assumes the role of a small time reporter trying to
+							make their way around a dark and abandoned hospital in order to gather evidence to check if the rumors about the shady
+							experiments conducted in the hospital are true.</p>
+							<p style="font-size:20px">The player encounters various puzzles which need to be solved in order to progress through the game and collect evidence
+							tapes. The ending of the game is influenced by the number of tapes collected during the playthrough. There is total of 5 tapes that can be collected 
+							and 3 different endings that can be achieved.</p>
+						</div>
+						<div class="mobile-display">
+							<p style="font-size:20px">Silverwood Hospital is a short 3d horror/puzzle game. The player assumes the role of a small
+								time reporter trying to
+								make their way around a dark and abandoned hospital in order to gather evidence to check if the rumors about the
+								shady
+								experiments conducted in the hospital are true.</p>
+						</div>
 						<a href="https://paconedved.itch.io/silverwood-hospital">Try the game for yourself.</a>
 					</div>
 				</div>
@@ -190,12 +212,18 @@
 					<div class="inner">
 						<h2>Sarcophagus</h2>
 						<br>
-						<p style="font-size:20px">A tower defense-esque shooter game made for Virtual Reality devices like HTC VIVE and HTC Cosmos using Unity and SteamVR</p>
-						<p style="font-size:20px">The player is placed in the middle of the level right next to a sarcophagus with the aim to stop the waves of mummies 
-						approaching from each direction. The player is equipped with multiple weapons like a pistol, tommy gun for long range combat, a machete for close combat
-						and a stick grenade to get out of a sticky situation.</p>
-						<p style="font-size:20px">The main aim of the game is to try and survive for as long as possible with the weapons in your arsenal and get the highest score.
-						Players get to experience features like shooting weapons, lobbing grenades and manually reloading guns and holstering/switching out weapons in VR. </p>
+						<div class="desktop-display">
+							<p style="font-size:20px">A tower defense-esque shooter game made for Virtual Reality devices like HTC VIVE and HTC Cosmos using Unity and SteamVR</p>
+							<p style="font-size:20px">The player is placed in the middle of the level right next to a sarcophagus with the aim to stop the waves of mummies 
+							approaching from each direction. The player is equipped with multiple weapons like a pistol, tommy gun for long range combat, a machete for close combat
+							and a stick grenade to get out of a sticky situation.</p>
+							<p style="font-size:20px">The main aim of the game is to try and survive for as long as possible with the weapons in your arsenal and get the highest score.
+							Players get to experience features like shooting weapons, lobbing grenades and manually reloading guns and holstering/switching out weapons in VR. </p>
+						</div>
+						<div class="mobile-display">
+							<p style="font-size:20px">A tower defense-esque shooter game made for Virtual Reality devices like HTC VIVE and HTC
+								Cosmos using Unity and SteamVR</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -226,11 +254,20 @@
 					<div class="inner">
 						<h2>Serial - The escape room</h2>
 						<br>
-						<p style="font-size:20px">A virutal reality escape room horror experience with large amount of challenging and interactive puzzles.</p>
-						<p style="font-size:20px">The players will find themselves trapped in the basement of a serial killer with nothing to their name. Familiarize yourself
-						with the environment as you interact with various objects and come across clues to solve the puzzles that will help you escape.</p>
-						<p style="font-size:20px">Getting out of the basement is only the beginning as the player will then need to navigate through the entire house to solve even
-						more challenging yet interesting puzzles, and in turn get to know more about the dreaded place that they are trapped in.</p>
+						<div class="desktop-display">
+							<p style="font-size:20px">A virutal reality escape room horror experience with large amount of challenging and interactive puzzles.</p>
+							<p style="font-size:20px">The players will find themselves trapped in the basement of a serial killer. Familiarize yourself
+							with the environment as you interact with various objects and come across clues to solve the puzzles that will help you escape.</p>
+							<p style="font-size:20px">Getting out of the basement is only the beginning as the player will then need to navigate through the entire house to solve even
+							more challenging yet interesting puzzles, and in turn get to know more about the dreaded place that they are trapped in.</p>
+						</div>
+						<div class="mobile-display">
+							<p style="font-size:20px">A virutal reality escape room horror experience with large amount of challenging and
+								interactive puzzles. Familiarize
+								yourself
+								with the environment as you interact with various objects and come across clues to solve the puzzles that will
+								help you escape.</p>
+						</div>
 					</div>
 				</div>
 			</div>
