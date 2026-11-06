@@ -4,477 +4,457 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jay Alaknure Portfolio</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<style media="all">
-		.mobile-display{display:none}
-		.desktop-display{display:block}
-		@media (max-width:1000px){
-			.desktop-display {display:none}
-			.mobile-display {display:block}
-		}
-		.iframe-container{
-  			position: relative;
-  			width: 100%;
-  			padding-bottom: 56.25%; 
-  			height: 0;
-		}
-		.iframe-container iframe{
-  			position: absolute;
-  			top:0;
-  			left: 0;
-  			width: 100%;
-  			height: 100%;
-		}		
-	</style>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            400: '#818cf8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-<div class="container-fluid bg-white pt-5">
-<!--- Welcome Section -->
-<div class="shadow container-fluid px-4 bg-secondary text-white rounded">
-<div class="row welcome text-center">
-	<div class="col-12">
-		<img src="images/Avatar.png" style="padding-top:30px">
-	</div>
-</div>
-<div class="row welcome text-center">
-	<div class="col-12">
-		<h1 class="display-4">Jay Alaknure</h1>
-		<br>
-	</div>
-</div>
-<br>
-<br>
-<div class="container-fluid">
-	<div class="col-12">
-		<h3 class="display-6">About</h1>
-		<p style="font-size:20px">Hey there, I am a game designer. I have been working professionally as a game designer and game developer for over two
-		years now, along with a small team of developers and 3D artists. I've worked on games in a variety of genres, including
-		horror, puzzle, 2D platformers, shooters, and action-adventure. I also have experience designing and developing games
-		for PC and VR. I am open to working on different game genres and novel ideas, as I am always looking for a new challenge
-		in terms of game design.
-		</p>
-		<br>
-	</div>
-</div>
-</div>
+<body class="bg-indigo-800/80 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-20">
 
-<br>
-<br>
+        <!-- Hero Section -->
+        <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-4">
+            
+            <!-- Profile Summary Section -->
+            <div class="lg:col-span-5 bg-slate-800/40 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col items-center text-center lg:items-start lg:text-left shadow-xl backdrop-blur-sm justify-between relative overflow-hidden group">
+                <div class="absolute -top-24 -left-24 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="w-full flex flex-col items-center lg:items-start">
+                    <div class="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full p-1 ring-4 ring-indigo-500 mb-6 shadow-2xl">
+                        <img src="images/Avatar.png" 
+                             alt="Game Developer Profile" >
+                    </div>
 
-<div class="container-fluid">
-	<div class="col-12">
-		<h3 class="display-6">Skills</h1>
-	</div>
-	<br>
-	<div class="shadow container-fluid px-4 bg-secondary text-white rounded">
-		<div class="container-fluid px-4 py-4 bg-secondary text-white rounded">
-		<!--SOFTWARES-->
-		<div class="col-12">
-			<h4 class="display-6">Softwares</h4>
-		</div>
-		<br>
-		<div class="row text-center padding">
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="images/unity_logo.png">
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="images/Aseprite.png">
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="images/blender.png">
-			</div>
-		</div>
-		<br>
-		<!-- PROGRAMMING-->
-		<div class="col-12">
-			<h4 class="display-6">Programming Languages</h4>
-		</div>
-		<br>
-		<div class="row text-center padding">
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<img src="images/Clogo.png">
-			</div>
-			<div class="col-xs1-12 col-sm-6 col-md-4">
-				<img src="images/python.png">
-			</div>
-		</div>
-		<br>
-		<!-- Foreign Languages-->
-		<div class="col-12">
-			<h4 class="display-6">Foreign Languages</h4>
-		</div>
-		<br>
-		<div class="row text-center padding">
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<h4 class="display-6">English</h4>
-			</div>
-			<div class="col-sm-12 col-md-4">
-				<h4 class="display-6">Japanese(N4)</h4>
-			</div>
-		</div>
-		</div>
-	</div>
-</div>
+                    <!-- Developer Name & Title -->
+                    <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-1">
+                        Jay Alaknure
+                    </h1>
+                    <p class="text-indigo-400 font-medium text-sm sm:text-base mb-4">
+                        Game Developer
+                    </p>
 
-<br>
-<br>
-<!--PROJECT SECTION-->
-<div class="container-fluid">
-	<div class="col-12">
-		<h3 class="display-6">Projects</h1>
-	</div>
-	<br>
-<!--LATEST PROJECT-->
-<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-	<div class="container-fluid py-3">
-		<div class="row">
-			<div class="col-sm-6 center">
-				<img class="img-responsive img-thumbnail" src="images/BloodHarvest1.png">
-			</div>
-			<div class="col-sm-6">
-				<div class="inner">
-					<h2>Blood Harvest</h2>
-					<br>
-					<div class="desktop-display">
-						<p style="font-size:20px">A 3D isometric stealth game made for the Ludum Dare 52 game jam. You play as a vampire who has to harvest blood of the civilians during night-time
-						while avoiding the security guards.</p>
-						<p style="font-size:20px">
-						<p style="font-size:20px">Things I worked on</p>
-						<ol type="1">
-							<li>Deciding on the game concept along with my team based on the theme of the game jam.</li>
-							<li>Designing the player movement.</li>
-							<li>Designing the menu UI.</li>
-							<li>Designing the levels for the game.</li>
-						</ol>
-						</p>
-					</div>
-					<div class="mobile-display">
-						<p style="font-size:20px">A 3D isometric stealth game made for the Ludum Dare 52 game jam. You play as a vampire who has to harvest blood of the
-						civilians during night-time while avoiding the security guards.</p>
-						<p style="font-size:20px">
-						<p style="font-size:20px">Things I worked on</p>
-						<ol type="1">
-							<li>Deciding on the game concept along with my team based on the theme of the game jam.</li>
-							<li>Designing the player movement.</li>
-							<li>Designing the menu UI.</li>
-							<li>Designing the levels for the game.</li>
-						</ol>
-						</p>
-					</div>
-					<a href="https://ldjam.com/events/ludum-dare/52/blood-harvest-2">Try the game for yourself.</a>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-sm-4 center">
-				<img class="img-responsive img-thumbnail" src="images/BloodHarvest2.png">
-			</div>
-			<div class="col-sm-4 center">
-				<img class="img-responsive img-thumbnail" src="images/BloodHarvest3.PNG">
-			</div>
-			<div class="col-sm-4 center">
-				<img class="img-responsive img-thumbnail" src="images/BloodHarvest41.png">
-			</div>
-		</div>
-	</div>
-</div>
-<br>
-<br>
-	<!--FIRST PROJECT-->
-	<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-		<div class="container-fluid py-3">
-			<div class="row">
-				<div class="col-sm-6 center">
-					<div class="iframe-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/qTd0wZdZxFM" title="YouTube video player" frameborder="0" 
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					</div>
-					<!--<img class="img-responsive img-thumbnail" src="images/Spire1.png">-->
-				</div>
-				<div class="col-sm-6">
-					<div class="inner">
-						<h2>Crimson Spire</h2>
-						<br>
-						<div class="desktop-display">
-							<p style="font-size:20px">A 3D action adventure game in its early stages. The player plays the role of a travelling warrior on a journey to the
-							Crimson Spire.</p>
-							<p style="font-size:20px"><p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Creating a terrain using the Unity terrain system.</li>
-								<li>Integrating the new Unity input system to support multiple gamepads along with mouse and keyboard.</li>
-								<li>Developing a combat system.</li>
-								<li>Developing enemy AI with different states an multiple attack patterns.</li>
-								<li>Developing NPC interaction feature.</li>
-								<li>Designing small quests.</li>
-							</ol></p>
-							<p style="font-size:20px">This is a short demo of the game and is made using the new Unity input system, due to which it can be played using mouse
-							and keyboard or a controller.</p>
-						</div>
-						<div class="mobile-display">
-							<p style="font-size:20px">A 3D action adventure game in its early stages. The player plays the role of a travelling warrior on a journey to the
-							Crimson Spire.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Creating a terrain using the Unity terrain system.</li>
-								<li>Integrating the new Unity input system to support multiple gamepads along with mouse and keyboard.</li>
-								<li>Developing a combat system.</li>
-								<li>Developing enemy AI with different states an multiple attack patterns.</li>
-								<li>Developing NPC interaction feature.</li>
-								<li>Designing small quests.</li>
-							</ol>
-							</p>
-						</div>
-						<a href="https://paconedved.itch.io/crimson">Try the game for yourself.</a>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Spire2.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Spire3.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Spire4.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<!--SECOND PROJECT-->
-	<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-		<div class="container-fluid py-3">
-			<div class="row">
-				<div class="col-sm-6 center">
-					<div class="iframe-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/wnHb1NifBKA" title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="inner">
-						<h2>Silverwood Hospital</h2>
-						<br>
-						<div class="desktop-display">
-							<p style="font-size:20px">Silverwood Hospital is a short 3D horror/puzzle game. The player assumes the role of a small-time reporter trying to
-							make their way around a dark and abandoned hospital in order to gather evidence to check if the rumours about the shady
-							experiments conducted in the hospital are true.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-								<ol type="1">
-									<li>Designing the entire level layout.</li>
-									<li>Designing puzzles for the game.</li>
-									<li>Scripting the puzzles and player interactions.</li>
-									<li>Creating multiple endings for the game.</li>
-								</ol>
-							</p>
-							<p style="font-size:20px">The player encounters various puzzles that need to be solved in order to progress through the game and collect evidence
-							tapes.</p>
-						</div>
-						<div class="mobile-display">
-							<p style="font-size:20px">Silverwood Hospital is a short 3D horror/puzzle game. The player assumes the role of a small-time reporter trying to
-							make their way around a dark and abandoned hospital in order to gather evidence to check if the rumours about the shady
-							experiments conducted in the hospital are true.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-								<ol type="1">
-									<li>Designing the entire level layout.</li>
-									<li>Designing puzzles for the game.</li>
-									<li>Scripting the puzzles and player interactions.</li>
-									<li>Creating multiple endings for the game.</li>
-								</ol>
-							</p>
-						</div>
-						<a href="https://paconedved.itch.io/silverwood-hospital">Try the game for yourself.</a>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Silverwood2.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Silverwood3.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Silverwood4.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<!--THIRD PROJECT-->
-	<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-		<div class="container-fluid py-3">
-			<div class="row">
-				<div class="col-sm-6 center">
-					<img class="img-responsive img-thumbnail" src="images/Shoot1.png">
-				</div>
-				<div class="col-sm-6">
-					<div class="inner">
-						<h2>Sarcophagus</h2>
-						<br>
-						<div class="desktop-display">
-							<p style="font-size:20px">A tower defense-esque shooter game made for virtual reality devices like HTC VIVE and HTC Cosmos using Unity and
-							SteamVR.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Designing the level layout.</li>
-								<li>Developing different weapons like a handgun, an SMG, a machete and a hand grenade.</li>
-								<li>Scripting snap zones that aact as holsters that allow the player to holster and switch guns in VR.</li>
-								<li>Developing Enemy AI that has different states like chase, attack and dodge.</li>
-								<li>Developing a system that calculates and keeps track of players score.</li>
-							</ol>
-							</p>
-							<p style="font-size:20px">The main goal of the game is to survive as long as possible with the weapons in your arsenal while earning the highest
-							score. Players get to experience features like shooting weapons, throwing grenades, manually reloading guns, and
-							holstering or switching out weapons in VR. </p>
-						</div>
-						<div class="mobile-display">
-							<p style="font-size:20px">A tower defense-esque shooter game made for virtual reality devices like HTC VIVE and HTC Cosmos using Unity and
-							SteamVR.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Designing the level layout.</li>
-								<li>Developing different weapons like a handgun, an SMG, a machete and a hand grenade.</li>
-								<li>Scripting snap zones that aact as holsters that allow the player to holster and switch guns in VR.</li>
-								<li>Developing Enemy AI that has different states like chase, attack and dodge.</li>
-								<li>Developing a system that calculates and keeps track of players score.</li>
-							</ol>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Shoot2.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Shoot3.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Shoot4.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-	<!--FOURTH PROJECT-->
-	<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-		<div class="container-fluid py-3">
-			<div class="row">
-				<div class="col-sm-6 center">
-					<img class="img-responsive img-thumbnail" src="images/Serial3.PNG">
-				</div>
-				<div class="col-sm-6">
-					<div class="inner">
-						<h2>Serial - The escape room</h2>
-						<br>
-						<div class="desktop-display">
-							<p style="font-size:20px">A virtual reality horror escape room experience with numerous challenging and interactive puzzles.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Mapping out the entire level layout.</li>
-								<li>Designing the game progression.</li>
-								<li>Coming up with multiple interactive and challenging puzzles.</li>
-								<li>Scripting the said puzzles.</li>
-								<li>Developing a main menu UI.</li>
-							</ol>
-							</p>
-							<p style="font-size:20px">The players will find themselves trapped in the basement of a serial killer. Familiarize yourself with the environment
-							as you interact with various objects and come across clues to solve the puzzles that will help you escape.</p>
-						</div>
-						<div class="mobile-display">
-							<p style="font-size:20px">A virtual reality horror escape room experience with numerous challenging and interactive puzzles. Familiarize yourself with the environment
-							as you interact with various objects and come across clues to solve the puzzles that will help you escape.</p>
-							<p style="font-size:20px">
-							<p style="font-size:20px">Things I worked on</p>
-							<ol type="1">
-								<li>Mapping out the entire level layout.</li>
-								<li>Designing the game progression.</li>
-								<li>Coming up with multiple interactive and challenging puzzles.</li>
-								<li>Scripting the said puzzles.</li>
-								<li>Developing a main menu UI.</li>
-							</ol>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Serial12.png">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Serial2.PNG">
-				</div>
-				<div class="col-sm-4 center">
-					<img class="img-responsive img-thumbnail" src="images/Serial4.PNG">
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-</div>
-<!--CONTACT-->
-<div class="container-fluid">
-	<div class="col-12">
-		<h3 class="display-6">Contact</h1>
-	</div>
-	<br>
-	<!--FIRST PROJECT-->
-	<div class="shadow container-fluid px-4 bg-dark text-white rounded">
-		<div class="container-fluid py-3">
-			<div class="row text-center padding">
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<img src="images/gmail.png">
-					<br>
-					<a href="mailto:jayalaknure@gmail.com"><p>jayalaknure@gmail.com</p></a>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<img src="images/discord.png">
-					<br>
-					<p>paconedved#4628</p>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<img src="images/itch.png">
-					<br>
-					<a href="https://paconedved.itch.io/"><p>paconedved.itch.io</p></a> 
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<br>
-</div>
+                    <!-- Summary -->
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        Passionate game developer with 5+ years of professional experience specializing in VR game design, mechanics development, and optimization. Shipped 6 standalone VR titles on the Meta Horizon Store and published PC games across various genres like horror, puzzle, stealth and narrative driven text based RPG.
+                    </p>
+                </div>
+
+                <!-- Contact & Project shortcut -->
+                <div class="w-full pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row gap-3">
+                    <a href="#contact" class="flex-1 text-center py-2.5 px-4 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl text-sm transition-all shadow-lg shadow-indigo-600/20 active:scale-95">
+                        Contact Me
+                    </a>
+                </div>                 
+            </div>
+
+            <!-- Skills column -->
+            <div class="lg:col-span-7 bg-slate-800/40 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl backdrop-blur-sm">
+                <div>
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            Skills & Technical Stack
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Softwares -->
+                        <div>
+                            <h3 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                Game Engines & Software
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 hover:border-indigo-500/50 text-slate-200 text-xs font-medium rounded-lg transition-all flex items-center gap-1.5">
+                                    <i class="fa-brands fa-unity text-indigo-400"></i> Unity Engine
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 hover:border-indigo-500/50 text-slate-200 text-xs font-medium rounded-lg transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-vr-cardboard text-indigo-400"></i> UnityXR
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg">
+                                    Visual Studio 
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg">
+                                    Git & GitHub
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg">
+                                    Aseprite
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Programming Languages -->
+                        <div>
+                            <h3 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                Programming Languages
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    <i class="fa-solid fa-hashtag text-indigo-400"></i> C#
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    <i class="fa-brands fa-python text-emerald-400"></i> Python
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg">
+                                    HTML5 / Tailwind CSS
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Spoken Languages -->
+                        <div>
+                            <h3 class="text-xs font-semibold text-slate-200 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                Spoken Languages
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    English (Fluent / Professional)
+                                </span>
+                                <span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    Japanese (JLPT N3 Conversational)
+                                </span>
+								<span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    Marathi (Native)
+                                </span>
+								<span class="px-3 py-1.5 bg-slate-800 border border-slate-700/80 text-slate-200 text-xs font-medium rounded-lg flex items-center gap-1.5">
+                                    Hindi (Bilingual)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Itch & Github links -->
+                <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <span class="text-xs uppercase tracking-wider text-slate-200 font-bold">Connect : </span>
+                    <div class="flex items-center gap-3">
+                        <a href="https://paconedved.itch.io/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 bg-slate-800 hover:bg-red-500/20 hover:text-red-400 border border-slate-700 hover:border-red-500/40 text-slate-300 text-xs font-medium rounded-xl transition-all">
+                            <i class="fa-solid fa-gamepad"></i> Itch.io
+                        </a>
+                        <a href="https://github.com/paconedved" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 hover:text-white border border-slate-700 text-slate-300 text-xs font-medium rounded-xl transition-all">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="professional" class="space-y-10">
+            <div class="border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Professional Experience</h2>
+                        <p class="text-slate-400 text-sm">VR Application Development</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simutomy -->
+            <div class="space-y-6">
+                <div class="bg-gradient-to-r from-blue-500/70 to-blue-500/30 border-l-4 border-l-blue-500 border border-slate-800 rounded-r-xl p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div>
+                            <div class="flex items-center gap-3">
+                                <h3 class="text-lg font-bold text-white">VR Developer</h3>
+                                <span class="px-2.5 py-0.5 bg-green-700/90 text-slate-300 border border-slate-600 text-xs font-medium rounded-full">3+ Years</span>
+                            </div>
+                            <p class="text-slate-200 text-sm mt-1">Simutomy MedTech Pvt Ltd</p>
+                        </div>
+                    </div>
+                    <div class="text-xs text-slate-900 bg-yellow-300/70 px-4 py-2 rounded-lg border border-slate-800 flex items-center gap-2">
+                        <span>Shipped <strong>6 Standalone VR Applications</strong> on Meta Horizon Store</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    
+                    <!-- VR Nursing -->
+                    <div class="bg-slate-800/30 border border-blue-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Nursing.png" alt="VR Application Thumbnail" class="w-full h-full object-cover">
+                                <span class="absolute top-3 right-3 px-2.5 py-1 bg-slate-900/90 backdrop-blur-md text-indigo-400 text-xs font-semibold rounded-md border border-slate-700/80">Meta Quest</span>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Viser Nursing</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">Published three different applications called Viscer Nursing I, II and III respectively. Comprising of 30+ completely interactive nursing procedures.</p>
+                            </div>
+                        </div>
+						<div class="px-5 pb-5 pt-2 mt-auto">
+                            <div class="grid grid-cols-3 gap-2">
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-nursing-i/970758819320667/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Nursing I
+                                </a>
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-nursing-ii/973810202348862/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Nursing II
+                                </a>
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-nursing-iii/975573215505894/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Nursing III
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VR Medical -->
+                    <div class="bg-slate-800/30 border border-blue-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Medical.png" alt="VR Application Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 right-3 px-2.5 py-1 bg-slate-900/90 backdrop-blur-md text-indigo-400 text-xs font-semibold rounded-md border border-slate-700/80">Meta Quest</span>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Viser Medical</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">Published three different applications called Viscer Medical I, II and III respectively focusing on patient communication skills and 
+									essential medical skills spanning across Emergency Medicine, Dermatovenerology, Anesthesiology and many more</p>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5 pt-2 mt-auto">
+                            <div class="grid grid-cols-3 gap-2">
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-medical-i/982291424834073/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Medical I
+                                </a>
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-medical-ii/987344250995457/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Medical II
+                                </a>
+                                <a href="https://www.meta.com/en-gb/experiences/viscer-medical-iii/987364314326784/" target="_blank" class="py-2 px-2 bg-sky-600/80 hover:bg-indigo-600 text-slate-200 hover:text-white border border-slate-700 hover:border-indigo-500 rounded-xl text-[11px] font-medium transition-all flex items-center justify-center gap-1.5 text-center">
+                                    <i class="fa-brands fa-meta"></i> Viscer Medical III
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DB Productions -->
+            <div class="space-y-6">
+                <div class="bg-gradient-to-r from-blue-500/70 to-slate-300/30 border-l-4 border-l-blue-500 border border-slate-800 rounded-r-xl p-5 sm:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <h3 class="text-lg font-bold text-white">Game Developer</h3>
+                            <span class="px-2.5 py-0.5 bg-green-700/90 text-slate-300 border border-slate-600 text-xs font-medium rounded-full">2 Years</span>
+                        </div>
+                        <p class="text-slate-200 text-sm mt-1">DB Production</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    
+                    <!-- Sarcophagus -->
+                    <div class="bg-slate-800/30 border border-blue-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Shoot2.png" alt="VR Application Thumbnail" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Sarcophagus</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                    A VR tower defense shooter featuring dynamic enemy waves, and a weapon system consisting of melee weapons, throwables, one-handed guns and two-handed guns.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 pt-1">
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Unity VR</span>
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Weapon Mechanics</span>
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">NavMesh AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Serial -->
+                    <div class="bg-slate-800/30 border border-blue-500 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Serial.png" alt="VR Application Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Serial</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                    Atmospheric VR horror escape room featuring a variety of environmental and physics based puzzles with VR interaction as its main focus.
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 pt-1">
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Game Design</span>
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Puzzle Systems</span>
+                                    <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">VR Physics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Personal Projects -->
+        <section id="personal" class="space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Personal Projects</h2>
+                    </div>
+                </div>
+            </div>
+
+                <!-- 2 Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+
+                    <!-- Silverwood Hospital -->
+                    <div class="bg-slate-800/30 border border-green-400 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Silverwood7.png" alt="VR Application Thumbnail" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Silverwood Hospital</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                    First-person 3D horror puzzle game built in Unity. Featuring flashlight mechanics, enivronment based puzzles, item collection mechanic, multiple endings and an eerie and dark environment.
+                                </p>
+                                <div class="pt-6">
+                                    <a href="https://paconedved.itch.io/silverwood-hospital" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-red-600/20 hover:bg-red-600 border border-red-500/30 hover:border-red-600 text-red-300 hover:text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-gamepad"></i> Download on Itch.io
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rift Walker -->
+                    <div class="bg-slate-800/30 border border-green-400 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/CoverArt_Rift.png" alt="VR Application Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Rift Walker</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                     Narrative driven text-based RPG made using python and HTML playable in browser. It contains three acts, with each one of them having different areas to explore and choices to make which determine how you progress. 
+                                </p>
+                                <div class="pt-6">
+                                    <a href="https://paconedved.itch.io/rift-walker" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-red-600/20 hover:bg-red-600 border border-red-500/30 hover:border-red-600 text-red-300 hover:text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-gamepad"></i> Play on Itch.io
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blood Harvest -->
+                    <div class="bg-slate-800/30 border border-green-400 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/BloodHarvest1.png" alt="VR Application Thumbnail" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Blood Harvest</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                    A 3D isometric stealth game made for the Ludum Dare 52 game jam. You play as a vampire who has to harvest blood of the civilians during night-time while avoiding the security guards.
+                                </p>
+                                <div class="pt-6">
+                                    <a href="https://smeljey.itch.io/blood-harvest" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-red-600/20 hover:bg-red-600 border border-red-500/30 hover:border-red-600 text-red-300 hover:text-white font-medium rounded-xl text-xs transition-all flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-gamepad"></i> Play / Download on Itch.io
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kanji App -->
+                    <div class="bg-slate-800/30 border border-green-400 rounded-2xl overflow-hidden flex flex-col justify-between shadow-lg">
+                        <div>
+                            <div class="relative overflow-hidden aspect-video bg-slate-800">
+                                <img src="images/Kanji.png" alt="VR Application Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <h4 class="text-base font-bold text-white">Kanji</h4>
+                                <p class="text-s text-slate-300 leading-relaxed">
+                                    An application that helps learn basic Japanese alphabtes like Hiragana and Katakana along with advanced necessary(常用) Kanjis that are categorized according to the JLPT levels.
+                                </p>
+                                <div class="pt-6">
+                                    <target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 bg-slate-600/20  border border-slate-500/30 text-white-900 font-medium rounded-xl text-xs flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-gamepad"></i> WIP
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="pt-6">
+            <div class="bg-gradient-to-b from-slate-800/50 to-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-center space-y-6 relative overflow-hidden">
+                <div class="max-w-xl mx-auto space-y-3">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Get in touch</h2>
+                    <p class="text-s text-slate-300 leading-relaxed">
+                        If you are looking for a game programmer to join your team, leave me a message below! 
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col items-center gap-4 w-full max-w-md mx-auto">
+                        
+                        <input type="hidden" name="access_key" value="6b239fa0-a538-4328-b838-1aa85442a204">
+
+                        <input type="email" name="email" placeholder="Your Email Address" required 
+                            class="w-full px-4 py-3 bg-slate-800 text-white rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-500">
+                        <textarea name="message" rows="4" placeholder="Your Message..." required 
+                                class="w-full px-4 py-3 bg-slate-800 text-white rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-500"></textarea>
+
+                        <button type="submit" class="inline-flex items-center justify-center w-full px-6 py-3 font-medium text-white transition-all bg-indigo-600 rounded-xl hover:bg-indigo-500 shadow-lg shadow-indigo-600/30">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            Send Email
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+	<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when clicking a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-
 
 
 
